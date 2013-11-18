@@ -1,0 +1,13 @@
+.fixed
+  %nav#nav.top-bar
+    %ul.title-area
+      %li.name
+        %h1 Erica and Jason
+      %li.toggle-topbar.menu-icon
+        %a{href:'#'}
+          %span 
+    %div.top-bar-section
+      %ul.right
+        - data.sections.Sections.each do |section,section_title|
+          %li
+            %a{href:"##{section}",class:"nav_#{section}"} #{section_title}

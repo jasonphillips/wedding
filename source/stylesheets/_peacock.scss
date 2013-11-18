@@ -1,3 +1,7 @@
+nav {
+  z-index: 1000;
+}
+
 #brideandgroom, .nav_brideandgroom {
   background-color: #30445f;
 }
@@ -6,17 +10,12 @@
   background-color: #50374c;
 }
 
-#accomodations, .nav_accomodations {
+#rsvp, .nav_rsvp {
   background-color: #6ea097;
 }
 
 #registry, .nav_registry {
   background-color: #30445f;
-}
-
-.plus {
-  font-size:1.5em;
-  margin-bottom: 1em;
 }
 
 .us {
@@ -67,3 +66,59 @@
     padding-top:10px;
   }
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+/* Markdown content */
+
+section ul {
+  padding-left: 2em;
+}
+
+blockquote {
+  color: inherit;
+  border: none;
+  p {
+    color: inherit;
+  }
+  strong {
+    font-size: 1.5em;
+    text-shadow: 1px 1px black;
+  }
+}
+
+#registry {
+  .left, .right {
+    text-align: center;
+  }
+  img {
+    height: 150px;
+    margin-bottom: 1em;
+    margin-left: 2em;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    font-size: 1.4em;
+    color: white;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+.pictrow {
+  text-align: center;
+  img {
+    border: 2px solid #999;
+    border-radius: 20px;
+    margin-bottom: .5em;
+    width: 250px;
+  }
+}
+
+.centered { text-align: center; }
+.centered > * { margin: auto; }

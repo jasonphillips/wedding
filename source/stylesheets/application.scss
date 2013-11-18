@@ -2,7 +2,8 @@
 // Application
 //------------------------------------------------------------------------
 
-//= require_tree ./vendor
+//= require ./foundation/scss/foundation.scss
+
 
 //@import "compass";
 
@@ -12,6 +13,12 @@
 //@import "shared/mixins";
 //@import "shared/media";
 //@import "shared/ie";
+
+@import "foundation/scss/foundation/variables";
+@import "foundation/scss/foundation/components/global";
+@import "foundation/scss/foundation/components/dropdown";
+
+//= require_tree ./vendor
 
 @import "wedding";
 @import "peacock";

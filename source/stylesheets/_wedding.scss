@@ -140,7 +140,7 @@ body {
 #introtext {
     display: block;
     padding: 10px 0 10px 0;
-    margin-bottom: 300px;
+    /*margin-bottom: 300px;*/
     background: black;
 
     -ms-border-radius: 8px;
@@ -161,7 +161,7 @@ body {
 
 #introtext .head-erica {
     font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 100%;
 }
 #introtext .amp {
@@ -182,91 +182,21 @@ body {
 }
 
 /* ==============
-    MOBILE: Menu
-   ============== */
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: black;
-  width: 100%;
-  ul {
-    font-family:"futura_ltbook",Arial,sans-serif;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-  }  
-  a {
-    margin-bottom: 10px;
-    padding: 5px 0;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background: transparent;
-    white-space: nowrap;
-    outline: none;
-  }
-  li { display: inline; }
-}
-
-   
-/*
-nav {
-    z-index: 42;
-}
-
-nav ul {
-    font-family:"futura_ltbook",Arial,sans-serif;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 5px 0;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background: transparent;
-    white-space: nowrap;
-    outline: none;
-}
-
-nav li a:hover {
-    color: black; //#fff;
-    background: white; //#b1bf92;
-    text-decoration: none;
-    outline: none;
-}
-nav li a.selected {
-    color: #fff;
-    background: #b1bf92;
-    text-decoration: none;
-    outline: none;
-}
-*/
-
-/** firefox remove outline **/
-nav ul li a:focus {outline:none;}
-nav ul li a::-moz-focus-inner {border:0;}
-
-
-
-/* ==============
     MOBILE: Main
    ============== */
 
 .main {
-    padding: 5% 0;
+    padding: 0% 0;
 }
 .main header {
     float: right;
     width: 80%;
+}
+.show-for-small {
+  display: block;
+}
+.show-for-medium-up {
+  display:none;
 }
 
 /* ==========================================================================
@@ -286,12 +216,12 @@ body {
 
 #bg-image {
     position: fixed; 
-    /*top: -50%; 
+    top: -50%; 
     left: -50%; 
     width: 200%; 
-    height: 200%;*/
-    width: 100%;
-    height: 100%;
+    height: 200%;
+    /*width: inherit;
+    height: 100%;*/
     background: url(/images/pattern.jpg);
 }
 #bg-image img {
@@ -303,7 +233,6 @@ body {
     margin: auto; 
     min-width: 50%;
     min-height: 50%;
-    width: 100%;
 }
 
 #bg-container {
@@ -359,6 +288,12 @@ section h2 {
     padding: 0;
 }
 
+
+.plus {
+  font-size:1em;
+  margin-bottom: .5em;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -371,6 +306,12 @@ section h2 {
 
     body {
         background-position: 50% 20%;
+    }
+    
+        
+    .plus {
+      font-size:1.5em;
+      margin-bottom: 1em;
     }
 
     /** get the transparent bar on the bottom **/
@@ -411,41 +352,6 @@ section h2 {
         margin-top: 15px;
         margin-bottom: 20px;
     }
-    nav {
-        display: block;
-    }
-
-    nav ul {
-        text-align: center;
-        margin: auto;
-        padding: 0;
-        text-align: center;
-    }
-    nav ul li {
-        display: inline;
-        padding: 0;
-        margin: 0;
-    }
-
-    nav a {
-        padding: 15px 1%;
-        margin-bottom: 0;
-        display:inline-block;
-        font-size: 60%;
-        white-space: nowrap;
-
-        -moz-font-smoothing: antialiased;
-        -o-font-smoothing: antialiased;
-        -ms-font-smoothing: antialiased;
-        -webkit-font-smoothing: antialiased;
-        font-smoothing: antialiased;
-
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        transition: all .3s ease;
-    }
 
     .main header {
         margin-top: 10%;
@@ -474,21 +380,23 @@ section h2 {
     }
 
 
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
+  .show-for-small {
+    display: none;
+  }
+  .show-for-medium-up {
+    display:block;
+  }
+
+    /*#bg-image { width: 100%; }
+    #bg-image img {
+        min-width: 50%;
+        min-height: 50%;
+        width: 100%;
+        height: initial;
+    }*/
 
 /* ====================
     WIDE: CSS3 Effects
@@ -536,10 +444,6 @@ section h2 {
         width: 100%;
     }
 
-    nav a {
-        padding: 15px 2%;
-        font-size: 90%;
-    }
 }
 @media only screen and (min-width: 900px) {
 
@@ -575,10 +479,6 @@ section h2 {
     Maximal Width
    =============== */
 
-    nav a {
-        padding: 15px 3%;
-        font-size: 120%;
-    }
 
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */

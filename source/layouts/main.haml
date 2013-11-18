@@ -18,10 +18,12 @@
 
 %body{ class: current_page.data.classes || "" }
   
+  = partial "layouts/mobile_nav"
   
   #bg-image
     //.usbar.nav_wedding
-    // = partial "layouts/family"
+    //  = partial "layouts/family"
+    // %img.show-for-small{src:"images/IMG_1452m.jpg",alt:"bg"}
     %img{src:"images/IMG_1452s.jpg",alt:"bg"}
         
 
@@ -29,7 +31,7 @@
     .header-container
       #heading.wrapper.clearfix
         %nav#nav
-          = partial "layouts/nav"
+          // = partial "layouts/nav"
 
     .main-container
       .main.wrapper.clearfix
@@ -56,7 +58,7 @@
         = yield
 
   -# JavaScripts
-  = javascript_include_tag "http://code.jquery.com/jquery-1.9.1.min.js"
+  = javascript_include_tag "http://code.jquery.com/jquery.min.js"
   = javascript_include_tag "application"
 
 -# Need this to close the doctype partial
