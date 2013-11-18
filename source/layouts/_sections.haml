@@ -1,0 +1,4 @@
+- data.sections.Sections.each do |section,section_title|
+  %section.clearfix{id:"#{section}"}
+    %h1 #{section_title}
+    = partial "content/#{section}"

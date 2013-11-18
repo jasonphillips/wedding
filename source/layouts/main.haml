@@ -1,0 +1,64 @@
+= partial "layouts/doctype"
+
+%head
+  -# Meta tags
+  = partial "layouts/meta"
+
+  -# Page title
+  %title= current_page.data.title
+
+  -# Stylesheets
+  = stylesheet_link_tag "application"
+
+  -# Application icons
+  = partial "layouts/icons"
+
+  -# HTML5Shiv
+  <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+%body{ class: current_page.data.classes || "" }
+  
+  
+  #bg-image
+    //.usbar.nav_wedding
+    // = partial "layouts/family"
+    %img{src:"images/IMG_1452s.jpg",alt:"bg"}
+        
+
+  #bg-container
+    .header-container
+      #heading.wrapper.clearfix
+        %nav#nav
+          = partial "layouts/nav"
+
+    .main-container
+      .main.wrapper.clearfix
+        %header
+          #introtext
+            %span.head-erica
+              Erica&nbsp;
+            %span.head-jason
+              %span.amp &amp
+              JASON
+            .plus
+              (...plus two)
+            .us
+              = partial "layouts/family"
+            .date
+              FEBRUARY 1<sup>st</sup>, 2014
+
+
+        .clearfix
+  
+        - if current_page.data.classes == 'home'
+          = partial "layouts/sections"
+  
+        = yield
+
+  -# JavaScripts
+  = javascript_include_tag "http://code.jquery.com/jquery-1.9.1.min.js"
+  = javascript_include_tag "application"
+
+-# Need this to close the doctype partial
+</html>
+

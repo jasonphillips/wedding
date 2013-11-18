@@ -1,0 +1,4 @@
+%ul
+  - data.sections.Sections.each do |section,section_title|
+    %li
+      %a{href:"##{section}",class:"nav_#{section}"} #{section_title}

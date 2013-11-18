@@ -1,0 +1,69 @@
+#brideandgroom, .nav_brideandgroom {
+  background-color: #30445f;
+}
+
+#wedding, .nav_wedding {
+  background-color: #50374c;
+}
+
+#accomodations, .nav_accomodations {
+  background-color: #6ea097;
+}
+
+#registry, .nav_registry {
+  background-color: #30445f;
+}
+
+.plus {
+  font-size:1.5em;
+  margin-bottom: 1em;
+}
+
+.us {
+  text-align: center;
+  width: 40%;
+  background-color: #30445f;
+  margin: auto;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  img {
+    height: 50px;
+    width: 50px;
+    float: none;
+  }
+  img.thumbi {
+    height: 40px;
+    width: 40px;
+    padding-right:10px;
+    padding-top:10px;
+  }
+}
+
+.usbar {
+  background-color: rgba(80,55,76,.7);
+  text-align: center;
+  width: 50%;
+  background-color: #30445f;
+  margin: auto;
+  margin-top: 60%;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  img {
+    height: 70px !important;
+    width: 70px !important;
+    float: none;
+    position: relative !important;
+    min-width: initial !important;
+    min-height: initial !important;
+  }
+  img.thumbi {
+    height: 60px;
+    width: 60px;
+    padding-right:10px;
+    padding-top:10px;
+  }
+}
