@@ -148,6 +148,8 @@ body {
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    
+    overflow: auto;
 
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(0, 0, 0);
