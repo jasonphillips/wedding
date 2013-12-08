@@ -2,3 +2,7 @@
   background: transparent;
   zoom: 1;
 }
+
+#introtext .amp {
+  margin-left: 0 !important;
+}
