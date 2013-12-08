@@ -1,0 +1,4 @@
+.header-container, #introtext, section {
+  background: transparent;
+  zoom: 1;
+}

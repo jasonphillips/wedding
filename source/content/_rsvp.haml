@@ -1,31 +1,29 @@
-.column.left
-  %h2 RSVP
-  %form{style:"margin-left:10%"}
-    Your E-mail Address<br>
-    %input{type:"text",style:"max-width:300px;",name:"email",value:""}
-      <br>
-      Total in your Party<br>
-      %select{style:"width:200px"}
-        %option 1
-        %option 2
-        %option 3
-        %option 4
-        %option 5
-        %option 6
-        %option 7
-        %option 8
-        %option 9
-        %option 1
-      %div Please include both acceptances and regrets.</span><br><br>
-      %a{href:"#",style:"color:white;"} Next &gt;&gt;
-
-.column.right
-  :markdown
-    ### Contact Us Directly
-    
-    If you have any questions, feel free to email us at:
-    
-     - <ericadtbuchanan@gmail.com>
-     - <jason.surname.phillips@gmail.com>
-     
+.show-for-medium-up
+  .column.full
+    %iframe{src:"http://rsvpericajason.rsvpify.com/?embed=1",frameborder:"0",width:"100%",height:"500px"}
+  .column.full
+    :markdown
+      ### Contact Us Directly
+      
+      If you have any questions, feel free to email us at:
+      
+       - <ericadtbuchanan@gmail.com>
+       - <jason.surname.phillips@gmail.com>
+  
+.hide-for-medium-up
+  .column.left
+    %h2 RSVP Online
+    %p
+      %a{href:"http://rsvpericajason.rsvpify.com/",target:"_blank"} Please click here to RSVP
+    %p
+  
+  .column.right
+    :markdown
+      ### Contact Us Directly
+      
+      If you have any questions, feel free to email us at:
+      
+       - <ericadtbuchanan@gmail.com>
+       - <jason.surname.phillips@gmail.com>
+   
 .clearfix

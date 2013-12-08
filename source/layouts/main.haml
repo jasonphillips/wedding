@@ -9,6 +9,9 @@
 
   -# Stylesheets
   = stylesheet_link_tag "application"
+  
+  -# IE Fixes
+  = partial "layouts/iefixes"
 
   -# Application icons
   = partial "layouts/icons"
@@ -23,8 +26,8 @@
   #bg-image
     //.usbar.nav_wedding
     //  = partial "layouts/family"
-    // %img.show-for-small{src:"images/IMG_1452m.jpg",alt:"bg"}
-    %img{src:"images/IMG_1452s.jpg",alt:"bg"}
+    %img.show-for-large-up{src:"images/IMG_1452m.jpg",alt:"bg"}
+    %img.hide-for-large-up{src:"images/IMG_1452s.jpg",alt:"bg"}
         
 
   #bg-container
@@ -60,6 +63,7 @@
   -# JavaScripts
   = javascript_include_tag "http://code.jquery.com/jquery.min.js"
   = javascript_include_tag "application"
+  = google_analytics_tag
 
 -# Need this to close the doctype partial
 </html>
