@@ -12,3 +12,4 @@
 
 
 #= require      ./_main
+#= require      ./instafeed.min.js
