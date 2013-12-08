@@ -9,11 +9,14 @@ nav {
   img {
     padding: .5em;
   }
+  border-bottom: 1px dotted #999;
+  border-top: 1px dotted #999;
 }
 
 @media only screen and (min-width: 650px) {
   #instafeed  {
      height: initial;
+     border: none;
   }
 }
 
