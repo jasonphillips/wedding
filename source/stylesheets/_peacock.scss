@@ -141,3 +141,13 @@ blockquote {
 
 .centered { text-align: center; }
 .centered > * { margin: auto; }
+
+footer {
+  margin-top: 2em;
+  color: white;
+  font-size: .9em;
+  .techlist {
+    color: darkgray;
+    font-family: monospace;
+  }
+}
