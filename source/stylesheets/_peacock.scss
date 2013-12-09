@@ -20,8 +20,6 @@ nav {
   }
 }
 
-
-
 #brideandgroom, .nav_brideandgroom {
   background-color: #30445f !important;
 }
@@ -139,6 +137,7 @@ blockquote {
     width: 250px;
   }
 }
+.pictrow.noborder img { border: none !important; }
 
 .centered { text-align: center; }
 .centered > * { margin: auto; }
